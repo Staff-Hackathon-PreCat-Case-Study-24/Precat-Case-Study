@@ -103,6 +103,6 @@ void print_modules()
     int c= count_modules();
     for(index=0; index<10; index++  )
     {
-            printf("\t [%s] [%d] [%d] [%d] [%d] \n", modules_arr[index].name, modules_arr[index].lecturehours , modules_arr[index].labhours, modules_arr[index].duration,modules_arr[index]);
+            printf("\t [%s] [%d] [%d] [%d] [%d] \n", modules_arr[index].name, modules_arr[index].lecturehours , modules_arr[index].labhours, modules_arr[index].duration,modules_arr[index].days);
     }
 }
