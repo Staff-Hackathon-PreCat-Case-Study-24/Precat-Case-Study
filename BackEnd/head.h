@@ -2,6 +2,8 @@
 #define HEADER_BATCHES
 #define BATCH_SIZE 10
 #define FACULTY_SIZE 10
+#define VENUE_SIZE 10
+
 
 struct batches
 {
@@ -29,6 +31,18 @@ struct faculties faculties_arr[ FACULTY_SIZE ];
 void read_faculties();
 int count_faculties();
 void print_faculties();
+
+struct venue
+{
+    char name[20];
+    char location[20];
+    int capacity;
+};
+
+struct venue venue_arr[ VENUE_SIZE ];
+void read_venue();
+int count_venue();
+void print_venue();
 
 
 #endif

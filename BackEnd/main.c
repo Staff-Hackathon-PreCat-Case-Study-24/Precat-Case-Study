@@ -9,5 +9,7 @@ int main()
     read_faculties();
     print_faculties();
 
+     read_venue();
+    print_venue();
 	return 0;
 }
