@@ -91,6 +91,4 @@ struct batch_plan schedule;
 
 
 void batch_plan();
-
-
 #endif
