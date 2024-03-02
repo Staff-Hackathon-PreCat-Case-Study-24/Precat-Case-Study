@@ -3,7 +3,7 @@
 #define BATCH_SIZE 10
 #define FACULTY_SIZE 10
 #define VENUE_SIZE 10
-
+#define MODULE_SIZE 10
 
 struct batches
 {
@@ -34,8 +34,8 @@ void print_faculties();
 
 struct venue
 {
-    char name[20];
-    char location[20];
+    char name[10];
+    char location[10];
     int capacity;
 };
 
@@ -44,5 +44,18 @@ void read_venue();
 int count_venue();
 void print_venue();
 
+struct modules
+{
+    char name[10];
+    int lecturehours;
+    int labhours;
+    int duration;
+    int days;
+};
+struct modules modules_arr[ MODULE_SIZE ];
+
+void read_modules();
+int count_modules();
+void print_modules();
 
 #endif
