@@ -58,4 +58,37 @@ void read_modules();
 int count_modules();
 void print_modules();
 
+
+struct batch_plan
+{
+    char batchname[10];
+    char start_date[20];
+    char end_date[20];
+    int  capacity;
+    int no_of_lab_faculties;   // capacity/40
+
+    char venue_name[20];
+
+    struct lecture_info 
+    {
+        char modulename[20];
+        char faculty_name[20];
+        char module_start_date[20];
+        char module_end_date[20];
+        int no_of_day;
+    }lecture[8];
+    
+    struct lab_info 
+    {
+        char modulename[20];
+        char faculty_name[20][3];
+        char module_start_date[20];
+        char module_end_date[20];
+        int no_of_day;        
+    }lab[3];
+};
+struct batch_plan schedule;
+
+
+void batch_plan();
 #endif
